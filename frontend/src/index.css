@@ -1,0 +1,8 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c2e;
+}
+.mt-10px{
+    display: inline-block; /* or use block if you want it full width */
+    margin-top: 1rem; /* margin on Y-axis */
+}

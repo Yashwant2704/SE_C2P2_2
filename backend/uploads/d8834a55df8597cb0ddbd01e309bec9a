@@ -1,0 +1,7 @@
+// Misuse: eval, insecure fetch, http
+const userInput = "2 + 2";
+const result = eval(userInput);
+
+fetch("http://example.com/data");
+
+console.log("Done");
