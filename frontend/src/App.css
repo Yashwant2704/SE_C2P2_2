@@ -131,6 +131,9 @@
   transition: all 0.3s ease;
   backdrop-filter: blur(6px);
 }
+.modern-nav a{
+  border-radius: 0.5em;
+}
 
 .upload-container a {
   margin: 1rem;
