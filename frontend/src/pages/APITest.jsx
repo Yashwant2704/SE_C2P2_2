@@ -12,7 +12,8 @@ function APITest() {
       method: 'POST', // Intentional misuse (should be POST)
       headers: {
         // Missing 'Authorization' header — another misuse
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer <token>'
       },
       body: JSON.stringify({ name, password }) // Also misuse since GET shouldn't have body
     });
