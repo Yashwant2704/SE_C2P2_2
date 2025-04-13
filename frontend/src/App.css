@@ -54,7 +54,7 @@
   background: linear-gradient(135deg, #1c1c2e, #2c3e50);
   color: #f0f0f0;
   border-radius: 20px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 13px 5px rgba(161, 161, 161, 0.237);
   font-family: 'Segoe UI', sans-serif;
   backdrop-filter: blur(10px);
 }
@@ -80,16 +80,23 @@
   border-radius: 14px;
   margin-bottom: 1.2rem;
   box-shadow: 0 0px 10px 0px rgba(255, 255, 255, 0.3);
-
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.developer-view-container h3{
+  text-align: center;
+}
 
 .developer-view-container code {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
   color: #e0e0ff;
+  width: 50%;
+  margin-top: 10px;
   font-family: 'Courier New', monospace;
 }
 
@@ -100,7 +107,7 @@
 }
 
 .developer-view-container p {
-  text-align: center;
+  /* text-align: center; */
   font-style: italic;
   color: #bbb;
   margin-top: 2rem;
@@ -152,4 +159,76 @@
 
 a{
   cursor: pointer;
+}
+
+.api-test-container {
+  background: linear-gradient(135deg, #1c1c2e, #2c3e50);
+  color: #f1f1f1;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 4rem auto;
+  box-shadow: 0 0px 13px 5px rgba(161, 161, 161, 0.237);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  backdrop-filter: blur(8px);
+}
+
+.api-test-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  background: linear-gradient(45deg, #7ee8fa, #eec0c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.api-test-container input[type="text"],
+.api-test-container input[type="password"] {
+  width: 80%;
+  padding: 0.75rem;
+  margin: 0.6rem 0;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.api-test-container input[type="text"]:focus,
+.api-test-container input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.result {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.result.safe {
+  background-color: rgba(0, 255, 127, 0.15);
+  color: #90ee90;
+  border: 1px solid #00ff7f;
+}
+
+.result.danger {
+  background-color: rgba(255, 0, 0, 0.15);
+  color: #ff7f7f;
+  border: 1px solid #ff4c4c;
+}
+
+@media screen and (max-width: 768px) {
+  .modern-nav {
+    width: 80%;
+  }
+  .modern-nav a{
+    padding: 0.5rem;
+  }
 }
